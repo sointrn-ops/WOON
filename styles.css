@@ -811,3 +811,47 @@ button:focus-visible{
  .home-hero{height:520px!important;min-height:440px!important;margin-bottom:34px!important}
  .home-hero .hero-copy{transform:translateY(-1vh)!important}
 }
+
+
+/* Editorial bridge between the hero image and homepage content. */
+.home-intro{
+  position:relative!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:18px!important;
+  width:100%!important;
+  max-width:1040px!important;
+  min-height:310px!important;
+  margin:0 auto!important;
+  padding:78px 7% 84px!important;
+  background:#f4f0e8!important;
+  color:#292721!important;
+  text-align:center!important;
+}
+.home-intro .eyebrow{
+  margin:0!important;
+  color:#8a8174!important;
+  font:500 10px/1.5 var(--sans)!important;
+  letter-spacing:3px!important;
+}
+.home-intro h2{
+  max-width:850px!important;
+  margin:0!important;
+  color:#292721!important;
+  font:400 clamp(32px,4.2vw,54px)/1.5 var(--fa)!important;
+  letter-spacing:-.7px!important;
+}
+.home-intro h2 em{font-style:normal!important;color:#8b7860!important}
+.home-intro>p:last-child{
+  max-width:620px!important;
+  margin:0!important;
+  color:#777166!important;
+  font:400 14px/2.2 var(--fa)!important;
+}
+@media(max-width:600px){
+ .home-intro{min-height:0!important;padding:58px 7% 62px!important;gap:14px!important}
+ .home-intro h2{font-size:30px!important;line-height:1.65!important}
+ .home-intro>p:last-child{font-size:12px!important;line-height:2.1!important}
+}
