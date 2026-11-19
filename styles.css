@@ -483,3 +483,22 @@ button:focus-visible{
  .home-hero h1{font-size:58px}
  .home-statement{padding:75px 7%;min-height:390px}
 }
+
+
+/* Critical visibility fix for the homepage lead photograph */
+.home-hero{position:relative!important;isolation:isolate;background-color:#29251f!important}
+.home-hero>.home-hero-image{
+  display:block!important;
+  position:absolute!important;
+  inset:0!important;
+  z-index:-1!important;
+  width:100%!important;
+  height:100%!important;
+  min-height:100%!important;
+  object-fit:cover!important;
+  object-position:center 52%!important;
+  opacity:1!important;
+  visibility:visible!important;
+}
+.home-hero:after{z-index:0!important;pointer-events:none}
+.home-hero .hero-copy,.home-hero .hero-dots{z-index:1!important}
