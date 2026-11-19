@@ -788,3 +788,26 @@ button:focus-visible{
  .gallery-card{flex-basis:82vw!important;height:390px!important}
  .gallery-controls{margin:14px 6% 0!important}
 }
+
+
+/* Fix homepage hero vertical alignment and separation from the next section. */
+.home-hero{
+  display:flex!important;
+  flex-direction:column!important;
+  justify-content:center!important;
+  align-items:center!important;
+  margin:0 0 clamp(34px,5vw,64px)!important;
+  height:min(680px,calc(100svh - 82px))!important;
+  min-height:500px!important;
+}
+.home-hero .hero-copy{
+  align-self:center!important;
+  margin:auto!important;
+  padding:24px!important;
+  transform:translateY(-2.5vh)!important;
+}
+.home-hero .hero-dots{bottom:28px!important}
+@media(max-width:600px){
+ .home-hero{height:520px!important;min-height:440px!important;margin-bottom:34px!important}
+ .home-hero .hero-copy{transform:translateY(-1vh)!important}
+}
