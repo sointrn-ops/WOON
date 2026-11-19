@@ -46,3 +46,32 @@
 .footer-main,.footer-cols,.footer-bottom{direction:rtl}
 .category-item{text-align:right}
 @media(max-width:600px){.site-drawer{padding:24px 22px}.split-feature,.feature-row{direction:rtl}}
+
+/* Reference-structure Persian RTL refinements */
+.site-drawer{inset:0 0 0 auto;left:auto;right:0;direction:rtl;text-align:right;transform:translateX(105%)}
+.site-drawer.open{transform:translateX(0)}
+.drawer-top,.drawer-links,.drawer-actions,.drawer-note{direction:rtl;text-align:right}
+.drawer-links a,.drawer-actions a{direction:rtl;text-align:right}
+.drawer-links small{margin:0 0 0 12px}
+.site-header{direction:ltr}
+.site-header .menu-toggle{direction:rtl;justify-self:start;font:600 12px var(--fa);letter-spacing:0}
+.site-header .header-links{direction:rtl;justify-self:end;letter-spacing:0;font:500 11px var(--fa)}
+.site-header .wordmark{direction:ltr}
+.split-feature,.feature-row{direction:rtl}
+.split-copy,.feature-row>div{direction:rtl;text-align:right}
+.category-item{border-left:0;border-right:2px solid #e4e1db;padding:25px 34px 25px 0;text-align:right}
+.category-item.active,.category-item:hover{border-color:var(--blue)}
+.menu-item{direction:rtl}
+.menu-item small{text-align:right}
+.footer-main,.footer-cols,.footer-bottom{direction:rtl}
+.footer-cols div{text-align:right}
+.search-screen{direction:rtl;text-align:right}
+.search-head{direction:rtl}
+.search-screen label{font-family:var(--fa);font-size:clamp(24px,4vw,36px);letter-spacing:0}
+.search-screen input{font-family:var(--fa);font-size:clamp(18px,3vw,28px);text-align:right}
+.search-links{direction:rtl}
+.menu-tab-link{display:inline-flex;align-items:center;justify-content:center;padding:12px 26px;border:1px solid var(--ink);border-radius:30px;font-size:12px}
+.menu-tab-link:hover{background:var(--blue);border-color:var(--blue);color:#fff}
+.menu-tabs{flex-wrap:wrap}
+@media(max-width:850px){.category-item{padding-right:20px}.site-header .header-links{gap:8px}}
+@media(max-width:600px){.site-drawer{padding:24px 22px}.site-header .header-links{gap:6px}.site-header .pill-link{font-family:var(--fa);font-size:10px}.category-item{padding:15px 18px 15px 0}.split-feature,.feature-row{direction:rtl}.search-screen{padding:22px}}
