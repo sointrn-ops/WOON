@@ -678,3 +678,113 @@ button:focus-visible{
  .reference-gallery-image--five{grid-column:2;grid-row:3}
  .reference-gallery-image--six{display:none!important}
 }
+
+
+/* République-inspired gallery: editorial heading + horizontal photographic rail. */
+.gallery-section{
+  display:block!important;
+  padding:clamp(76px,9vw,126px) 0 clamp(80px,9vw,120px)!important;
+  overflow:hidden!important;
+  background:#f4f0e8!important;
+}
+.gallery-heading{
+  display:flex!important;
+  align-items:end!important;
+  justify-content:space-between!important;
+  gap:36px!important;
+  max-width:none!important;
+  width:100%!important;
+  padding:0 8%!important;
+  margin:0 auto 34px!important;
+  text-align:left!important;
+}
+.gallery-heading .eyebrow{
+  margin:0 0 12px!important;
+  color:#777166!important;
+  font:500 11px/1.5 var(--sans)!important;
+  letter-spacing:3px!important;
+}
+.gallery-heading h2{
+  margin:0!important;
+  color:#292721!important;
+  font:400 clamp(40px,5.3vw,72px)/1.08 var(--serif)!important;
+  letter-spacing:-1.8px!important;
+}
+.gallery-intro{
+  display:block!important;
+  max-width:270px!important;
+  margin:0 0 5px!important;
+  color:#777166!important;
+  font:400 12px/2 var(--fa)!important;
+  text-align:right!important;
+}
+.gallery-viewport{display:block!important;width:100%!important;overflow:hidden!important}
+.gallery-track{
+  direction:ltr!important;
+  display:flex!important;
+  gap:18px!important;
+  overflow-x:auto!important;
+  overscroll-behavior-x:contain!important;
+  scroll-snap-type:x mandatory!important;
+  scroll-behavior:smooth!important;
+  padding:0 8% 12px!important;
+  cursor:grab!important;
+  touch-action:pan-y!important;
+  user-select:none!important;
+  scrollbar-width:none!important;
+}
+.gallery-track::-webkit-scrollbar{display:none!important}
+.gallery-card{
+  position:relative!important;
+  display:block!important;
+  flex:0 0 clamp(300px,34vw,490px)!important;
+  height:clamp(390px,43vw,570px)!important;
+  padding:0!important;
+  border:0!important;
+  border-radius:0!important;
+  background:#d8d0c3!important;
+  overflow:hidden!important;
+  scroll-snap-align:start!important;
+  text-align:right!important;
+  cursor:zoom-in!important;
+}
+.gallery-card img{
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  filter:saturate(.84) contrast(.97)!important;
+  transition:transform .8s cubic-bezier(.2,.7,.2,1)!important;
+  pointer-events:none!important;
+}
+.gallery-card:after{
+  content:""!important;position:absolute!important;inset:35% 0 0!important;
+  background:linear-gradient(transparent,#17140f88)!important;pointer-events:none!important;
+}
+.gallery-card span{
+  position:absolute!important;z-index:1!important;right:24px!important;bottom:22px!important;
+  color:#fff!important;font:400 14px/1.5 var(--fa)!important;pointer-events:none!important;
+}
+.gallery-card:hover img{transform:scale(1.035)!important}
+.gallery-controls{
+  display:flex!important;align-items:center!important;justify-content:space-between!important;
+  margin:18px 8% 0!important;
+}
+.gallery-controls>div{display:flex!important;gap:8px!important}
+.gallery-controls button{
+  width:46px!important;height:46px!important;border:1px solid #c9c2b6!important;
+  border-radius:0!important;background:transparent!important;color:#37342e!important;
+  font-size:19px!important;cursor:pointer!important;transition:background .2s,color .2s!important;
+}
+.gallery-controls button:hover{background:#34332e!important;color:#fff!important}
+.gallery-count{direction:ltr!important;color:#777166!important;font:500 11px var(--sans)!important;letter-spacing:1px!important}
+.reference-gallery-grid{display:none!important}
+@media(max-width:600px){
+ .gallery-section{padding:65px 0!important}
+ .gallery-heading{align-items:start!important;flex-direction:column!important;gap:14px!important;padding:0 6%!important;margin-bottom:24px!important}
+ .gallery-heading h2{font-size:42px!important}
+ .gallery-intro{max-width:240px!important;font-size:11px!important}
+ .gallery-track{gap:12px!important;padding:0 6% 10px!important}
+ .gallery-card{flex-basis:82vw!important;height:390px!important}
+ .gallery-controls{margin:14px 6% 0!important}
+}
