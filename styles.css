@@ -855,3 +855,80 @@ button:focus-visible{
  .home-intro h2{font-size:30px!important;line-height:1.65!important}
  .home-intro>p:last-child{font-size:12px!important;line-height:2.1!important}
 }
+
+
+/* 2026-11-19: show each scroll-category photograph as its own spaced panel. */
+.home-categories{
+  --category-step:clamp(500px,72svh,620px);
+  align-items:start!important;
+}
+.home-categories .category-list{
+  padding-top:0!important;
+  padding-bottom:0!important;
+}
+.home-categories .category-item{
+  min-height:var(--category-step)!important;
+  height:var(--category-step)!important;
+  justify-content:center!important;
+}
+.home-categories .category-media{
+  position:static!important;
+  top:auto!important;
+  align-self:start!important;
+  display:flex!important;
+  flex-direction:column!important;
+  gap:60px!important;
+  width:100%!important;
+  height:auto!important;
+  min-height:0!important;
+  max-height:none!important;
+  overflow:visible!important;
+  background:transparent!important;
+}
+.home-categories .category-media img{
+  position:relative!important;
+  inset:auto!important;
+  display:block!important;
+  flex:0 0 auto!important;
+  width:100%!important;
+  height:calc(var(--category-step) - 60px)!important;
+  min-height:0!important;
+  max-height:none!important;
+  object-fit:cover!important;
+  opacity:1!important;
+  visibility:visible!important;
+  transform:none!important;
+  transition:filter .45s ease!important;
+}
+.home-categories .category-media img.active{
+  opacity:1!important;
+  transform:none!important;
+  filter:saturate(1)!important;
+}
+.home-categories .category-media img:not(.active){
+  filter:saturate(.82)!important;
+}
+@media(max-width:600px){
+  .home-categories{
+    --category-step:clamp(430px,76svh,540px);
+    display:flex!important;
+    flex-direction:column!important;
+  }
+  .home-categories .category-list{
+    width:100%!important;
+    padding:0 6% 20px!important;
+  }
+  .home-categories .category-item{
+    min-height:145px!important;
+    height:auto!important;
+    padding:16px 18px 16px 0!important;
+  }
+  .home-categories .category-media{
+    width:100%!important;
+    gap:28px!important;
+    padding:0 6%!important;
+  }
+  .home-categories .category-media img{
+    height:clamp(280px,78vw,390px)!important;
+  }
+}
