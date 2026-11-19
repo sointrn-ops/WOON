@@ -859,7 +859,7 @@ button:focus-visible{
 
 /* Private events feature: visible editorial image, Persian copy and balanced split layout. */
 .home-events{
-  direction:rtl!important;
+  direction:ltr!important;
   display:grid!important;
   grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr)!important;
   align-items:center!important;
@@ -882,6 +882,7 @@ button:focus-visible{
   background:#e6e0d6!important;
 }
 .home-events .split-copy{
+  direction:rtl!important;
   width:100%!important;
   max-width:500px!important;
   justify-self:start!important;
