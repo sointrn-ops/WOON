@@ -116,3 +116,63 @@
 
 
 
+
+
+/* Homepage refinement: closer to République's navigation and editorial rhythm. */
+.site-header .header-links{gap:clamp(10px,1.7vw,25px);font:500 11px var(--fa);letter-spacing:0;white-space:nowrap}
+.site-header .header-links>a:not(.pill-link){border-bottom:1px solid transparent;padding:8px 0}
+.site-header .header-links>a:not(.pill-link):hover{border-color:var(--ink);opacity:1}
+.site-header .pill-link{font:500 11px var(--fa);letter-spacing:0;padding:12px 20px;white-space:nowrap}
+.hero{height:min(700px,calc(100svh - 82px));min-height:540px}
+.hero>img{object-position:center 52%}
+.hero:after{background:linear-gradient(90deg,#14131065,#14131020,#14131065)}
+.hero-kicker{letter-spacing:0;font:500 13px/1.8 var(--fa)}
+.hero h1{font-size:clamp(64px,8.5vw,112px);line-height:1.25}
+.hero-copy>p:last-of-type{font:500 clamp(12px,1.2vw,15px)/1.9 var(--fa);letter-spacing:0}
+.home-categories{max-width:1700px}
+.category-list{padding:0 11% 0 13%}
+.category-item{min-height:310px;border-left:0;border-right:1px solid #ded9cf;padding:30px 32px 30px 0}
+.category-item.active,.category-item:hover{border-color:var(--blue)}
+.category-item span{font:400 clamp(42px,4.7vw,68px)/1.25 var(--fa);letter-spacing:0}
+.category-item small{font:400 13px/1.9 var(--fa);max-width:420px}
+.category-media{top:82px;height:calc(100svh - 82px);max-height:780px}
+.menu-cta{margin:42px 8% 88px;padding:24px 0;justify-content:center;gap:35px;font:400 14px var(--fa)}
+.menu-cta a{font:600 12px var(--fa);letter-spacing:0}
+.statement{min-height:520px;padding:125px 10%}
+.statement h2{font:400 clamp(34px,4.6vw,62px)/1.65 var(--fa);max-width:980px}
+.statement>p:last-child{font:400 14px/2 var(--fa)}
+.split-feature{padding:110px 9%;gap:8%;grid-template-columns:1.05fr .95fr}
+.split-feature img{height:clamp(430px,49vw,650px)}
+.split-copy h2{font:400 clamp(40px,4.8vw,66px)/1.5 var(--fa)}
+.split-copy p:not(.eyebrow){font:400 14px/2.1 var(--fa)}
+.blue-link{font:500 12px var(--fa);letter-spacing:0}
+.gallery-section{padding:95px 0 110px}
+.gallery-heading h2{font:400 clamp(42px,5vw,68px)/1.4 var(--fa)}
+.gallery-track{gap:18px}
+.gallery-track button{flex-basis:clamp(300px,31vw,470px);height:clamp(390px,42vw,590px)}
+@media(max-width:850px){
+ .site-header .header-links{gap:10px}
+ .site-header .header-links>a:not(.pill-link){display:none}
+ .site-header .pill-link{padding:10px 14px;font-size:10px}
+ .category-list{padding:0 8% 0 9%}
+ .category-item{min-height:270px;padding-right:22px}
+ .category-item span{font-size:clamp(38px,5vw,52px)}
+}
+@media(max-width:600px){
+ .hero{height:560px;min-height:500px}
+ .hero h1{font-size:60px}
+ .hero-copy>p:last-of-type{font-size:12px}
+ .home-categories{display:flex;flex-direction:column}
+ .category-list{padding:12px 6% 28px}
+ .category-item{min-height:155px;padding:18px 18px 18px 0}
+ .category-item span{font-size:43px}
+ .category-media{position:relative;top:auto;height:360px;min-height:0;max-height:none}
+ .menu-cta{margin:28px 6% 60px;gap:18px;flex-wrap:wrap;font-size:12px}
+ .statement{min-height:420px;padding:80px 7%}
+ .statement h2{font-size:32px;line-height:1.7}
+ .split-feature{padding:65px 6%;gap:28px}
+ .split-feature img{height:360px}
+ .split-copy h2{font-size:42px}
+ .gallery-section{padding:65px 0 75px}
+ .gallery-track button{flex-basis:80vw;height:390px}
+}
