@@ -117,3 +117,9 @@
 /* Clear breathing room between the homepage hero and the first content section. */
 .hero{margin-bottom:72px}
 @media(max-width:600px){.hero{margin-bottom:38px}}
+
+
+/* Editorial bridge between hero and category section. */
+.hero-bridge{min-height:112px;margin:0 7%;display:flex;align-items:center;justify-content:center;text-align:center;border-bottom:1px solid var(--line);color:var(--muted);font:400 clamp(15px,1.6vw,19px)/1.9 var(--fa);letter-spacing:0;padding:20px 12px}
+.hero-bridge span{max-width:700px}
+@media(max-width:600px){.hero-bridge{min-height:88px;margin:0 5%;padding:16px 10px;font-size:14px}}
