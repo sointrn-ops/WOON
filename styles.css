@@ -112,3 +112,8 @@
 .event-space-card:nth-child(even)>div{direction:rtl;text-align:right}
 .event-space-card{grid-template-columns:1fr 1fr}
 @media(max-width:700px){.cafe-menu-links{grid-template-columns:1fr;padding:0 5% 45px}.cafe-menu-links>a{min-height:85px;padding:20px}.reference-gallery{grid-template-columns:repeat(2,1fr);gap:8px;padding:0 5% 50px}.reference-gallery img{height:190px}}
+
+
+/* Clear breathing room between the homepage hero and the first content section. */
+.hero{margin-bottom:72px}
+@media(max-width:600px){.hero{margin-bottom:38px}}
