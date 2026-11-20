@@ -121,3 +121,52 @@
   .gallery-track{grid-template-columns:1fr!important;gap:20px!important}
   .gallery-card{height:clamp(280px,85vw,420px)!important}
 }
+
+
+/* Reference gallery presentation: one image per row, with the original generous spacing. */
+.gallery-section{
+  padding:clamp(76px,9vw,124px) 8%!important;
+}
+.gallery-heading{
+  margin-bottom:42px!important;
+}
+.gallery-viewport{
+  overflow:visible!important;
+}
+.gallery-track{
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr)!important;
+  gap:clamp(28px,4vw,54px)!important;
+  width:100%!important;
+  overflow:visible!important;
+  padding:0!important;
+  scroll-snap-type:none!important;
+}
+.gallery-card{
+  display:block!important;
+  width:100%!important;
+  min-width:0!important;
+  height:clamp(360px,58vw,760px)!important;
+  margin:0!important;
+  overflow:hidden!important;
+  cursor:zoom-in!important;
+}
+.gallery-card img{
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  filter:none!important;
+  transition:transform .7s cubic-bezier(.2,.7,.2,1)!important;
+}
+.gallery-card:hover img{
+  transform:scale(1.025)!important;
+}
+.gallery-card:after,.gallery-card span,.gallery-controls{
+  display:none!important;
+}
+@media(max-width:600px){
+  .gallery-section{padding:62px 6%!important}
+  .gallery-heading{margin-bottom:28px!important}
+  .gallery-track{gap:22px!important}
+  .gallery-card{height:clamp(280px,82vw,430px)!important}
+}
